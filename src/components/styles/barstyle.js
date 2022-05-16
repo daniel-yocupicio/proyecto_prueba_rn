@@ -3,28 +3,31 @@ import { Dimensions, StyleSheet } from 'react-native';
 const stylesBar = StyleSheet.create({
     container: {
         width: Dimensions.get('screen').width,
-        backgroundColor: "#34495E",
         height: 50
     },
     directiontexticon: {
-        flex: 1, 
-        flexDirection: 'row' 
+        flex: 1,
+        flexDirection: 'row'
     },
-    text:{
-        fontSize: 30, 
-        color: "#ffffff", 
-        marginLeft: 10, 
-        fontWeight: "bold", 
-        fontFamily: 'lucida grande' 
+    text: {
+        fontSize: 30,
+        color: "#ffffff",
+        marginLeft: 10,
+        fontWeight: "bold",
+        fontFamily: 'lucida grande'
     },
-    iconcontainer:{
-        position: "absolute", 
-        top: 10, 
-        right: 10 
+    iconcontainer: {
+        position: "absolute",
+        top: 10,
+        right: 10,
+        flex: 1,
+        flexDirection: 'row'
     },
-    svg: {
-        position: 'absolute', 
-        top: 30,
+    touchable: {
+        flex: 1,
+        flexDirection: 'row',
+        margin: 2,
+        alignItems: 'center',
     }
 });
 
