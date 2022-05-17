@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, Dimensions, TouchableOpacity} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import {Input, Icon, Button, Card} from 'react-native-elements';
 import styles from './styles';
 
@@ -9,47 +9,21 @@ export default function RegisterComponent() {
       <Card containerStyle={styles.card}>
         <Card.Title style={styles.cardtitle}> Registrar cuenta </Card.Title>
         <Input
-          containerStyle={{borderRadius: 10, backgroundColor: '#fff'}}
+          containerStyle={styles.inputcontainer}
           placeholder="correo"
-          style={{fontSize: 18, marginBottom: -10, borderRadius: 10}}
+          style={styles.input1}
         />
-        <Input
-          placeholder="contraseña"
-          style={{fontSize: 18, marginBottom: -10, marginTop: -10}}
-        />
-        <Input
-          placeholder="repita la contraseña"
-          style={{fontSize: 18, marginBottom: -10, marginTop: -10}}
-        />
+        <Input placeholder="contraseña" style={styles.input2} />
+        <Input placeholder="repita la contraseña" style={styles.input2} />
         <Button title={'registrar'} />
       </Card>
-      <Card containerStyle={{borderRadius: 7, opacity: 0.95}}>
-        <Card.Title
-          style={{
-            fontSize: 15,
-            alignItems: 'center',
-            marginVertical: -10,
-            marginBottom: 3,
-          }}>
-          {' '}
-          Registrarse con{' '}
-        </Card.Title>
-        <View style={{width: Dimensions.get('screen').width, height: 50}}>
-          <View
-            style={{
-              flex: 1,
-              flexDirection: 'row',
-              width: Dimensions.get('screen').width,
-              alignContent: 'center',
-              alignSelf: 'center',
-              alignItems: 'center',
-            }}>
-            <View style={{width: '34%', marginHorizontal: 5}}>
+      <Card containerStyle={styles.card}>
+        <Card.Title style={styles.cardtitle2}> Registrarse con </Card.Title>
+        <View style={styles.containerdimension}>
+          <View style={styles.containerbuttons}>
+            <View style={styles.containerButton}>
               <Button
-                buttonStyle={{
-                  backgroundColor: '#268EF7',
-                  alignContent: 'center',
-                }}
+                buttonStyle={styles.buttonstyle1}
                 icon={
                   <Icon
                     type="material-community"
@@ -59,21 +33,16 @@ export default function RegisterComponent() {
                 }
               />
             </View>
-            <View style={{width: '34%', marginHorizontal: 5}}>
+            <View style={styles.containerButton}>
               <Button
                 icon={<Icon name="facebook" color="#ffffff" />}
-                buttonStyle={{backgroundColor: '#3b5998'}}
+                buttonStyle={styles.buttonstyle2}
               />
             </View>
           </View>
         </View>
       </Card>
-      <View
-        style={{
-          width: Dimensions.get('screen').width,
-          marginTop: 20,
-          marginLeft: 15,
-        }}>
+      <View style={styles.touchabletext}>
         <TouchableOpacity>
           <Text>Si ya tiene una cuenta presione aqui</Text>
         </TouchableOpacity>
