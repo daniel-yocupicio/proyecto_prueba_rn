@@ -1,3 +1,5 @@
+/*
+
 import React from 'react';
 import { View, ImageBackground, Image, Text, TouchableOpacity } from 'react-native'
 import { DrawerItemList, DrawerContentScrollView } from '@react-navigation/drawer';
@@ -63,3 +65,5 @@ export default function Drawer(props) {
         </View>
     )
 }
+
+*/

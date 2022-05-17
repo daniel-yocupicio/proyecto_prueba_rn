@@ -6,14 +6,14 @@ import styles from '../styles';
 export default function RegisterComponent() {
     return (
         <View style={{ position: 'absolute', width: Dimensions.get('screen').width - 30, height: 400, top: 70, right: 15, borderColor: "#EAEBEC", borderRadius: 20, borderWidth: 1 }}>
-            <Card>
+            <Card containerStyle={{borderRadius:7, opacity: 0.95 }}>
                 <Card.Title style={{ fontSize: 15, alignItems: 'center' }}> Registrar cuenta </Card.Title>
-                <Input placeholder='correo' style={{ fontSize: 18, marginBottom: -10 }} />
+                <Input containerStyle={{borderRadius: 10, backgroundColor: "#fff" }} placeholder='correo' style={{ fontSize: 18, marginBottom: -10, borderRadius: 10 }} />
                 <Input placeholder='contraseña' style={{ fontSize: 18, marginBottom: -10, marginTop: -10 }} />
                 <Input placeholder='repita la contraseña' style={{ fontSize: 18, marginBottom: -10, marginTop: -10 }} />
                 <Button title={"registrar"} />
             </Card>
-            <Card>
+            <Card containerStyle={{borderRadius:7, opacity: 0.95 }}>
             <Card.Title style={{ fontSize: 15, alignItems: 'center', marginVertical: -10, marginBottom: 3 }}> Registrarse con </Card.Title>
                 <View style={{ width: Dimensions.get('screen').width, height:50 }}>
                     <View style={{ flex: 1, flexDirection:'row', width: Dimensions.get('screen').width, alignContent: 'center', alignSelf:'center', alignItems: 'center'}}>

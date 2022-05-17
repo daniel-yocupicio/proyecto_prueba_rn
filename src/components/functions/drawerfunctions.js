@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { Image } from 'react-native';
 import styles from '../styles/index.js';
 import values from '../../const/index';
@@ -32,3 +32,4 @@ export default fuctions = {
         else return values.drawerComponent.isnotloged
     }
 }
+*/

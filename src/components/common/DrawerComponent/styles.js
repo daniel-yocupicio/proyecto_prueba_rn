@@ -1,4 +1,3 @@
-/*
 import { StyleSheet } from 'react-native';
 
 const stylesDrawer = StyleSheet.create({
@@ -57,4 +56,4 @@ const stylesDrawer = StyleSheet.create({
   });
   
   export default stylesDrawer;
-*/  
+  
