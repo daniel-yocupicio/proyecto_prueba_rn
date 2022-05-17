@@ -1,7 +1,7 @@
-import drawerComponent from './drawerComponentConst'
+import drawerComponent from './drawerComponentConst';
 
 const values = {
-    drawerComponent,
-}
+  drawerComponent,
+};
 
 export default values;
