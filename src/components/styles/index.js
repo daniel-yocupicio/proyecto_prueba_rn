@@ -1,9 +1,9 @@
+import stylesGoogleFacebookButtons from './GoogleFacebookButtonsstyle';
 import stylesSearchBar from './searchbarstyle';
-import stylesBarBottom from './barbottomstyle';
 
 const styles = {
-  stylesSearchBar: stylesSearchBar,
-  stylesBarBottom: stylesBarBottom,
+  stylesGoogleFacebookButtons,
+  stylesSearchBar,
 };
 
 export default styles;
