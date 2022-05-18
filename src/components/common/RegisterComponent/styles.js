@@ -10,17 +10,6 @@ const stylesRegisterComponent = StyleSheet.create({
     borderRadius: 20,
     borderWidth: 1,
   },
-  card: {borderRadius: 7, opacity: 0.95},
-  cardtitle: {fontSize: 15, alignItems: 'center'},
-  input1: {fontSize: 18, marginBottom: -10, borderRadius: 10},
-  input2: {fontSize: 18, marginBottom: -10, marginTop: -10},
-  cardtitle2: {
-    fontSize: 15,
-    alignItems: 'center',
-    marginVertical: -10,
-    marginBottom: 3,
-  },
-  inputcontainer: {borderRadius: 10, backgroundColor: '#fff'},
   touchabletext: {
     width: Dimensions.get('screen').width,
     marginTop: 20,
