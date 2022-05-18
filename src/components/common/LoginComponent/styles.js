@@ -1,5 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
-const stylesRegisterComponent = StyleSheet.create({
+const stylesLoginComponent = StyleSheet.create({
   container: {
     position: 'absolute',
     width: Dimensions.get('screen').width - 30,
@@ -28,4 +28,4 @@ const stylesRegisterComponent = StyleSheet.create({
   },
 });
 
-export default stylesRegisterComponent;
+export default stylesLoginComponent;

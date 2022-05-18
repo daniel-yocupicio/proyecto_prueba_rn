@@ -1,5 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
-const stylesDrawer = StyleSheet.create({
+const stylesGoogleFacebookButtons = StyleSheet.create({
   cardButtons: {borderRadius: 7, opacity: 0.95},
   cardtitle2: {
     fontSize: 15,
@@ -24,4 +24,4 @@ const stylesDrawer = StyleSheet.create({
   buttonstyle2: {backgroundColor: '#3b5998'},
 });
 
-export default stylesDrawer;
+export default stylesGoogleFacebookButtons;

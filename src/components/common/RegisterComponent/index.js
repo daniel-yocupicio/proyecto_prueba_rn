@@ -1,13 +1,14 @@
 import React from 'react';
 import {View, Text, TouchableOpacity} from 'react-native';
 import styles from './styles';
-import InputsComponent from './InputsComponent';
+//import InputsComponent from './InputsComponent';
 import GoogleFacebookButtons from '../GoogleFacebookButtons';
+import InputsLoginRegisterComponent from '../InputsLoginRegisterComponent';
 
 export default function RegisterComponent() {
   return (
     <View style={styles.container}>
-      <InputsComponent />
+      <InputsLoginRegisterComponent type="Registrar cuenta" />
       <GoogleFacebookButtons title="Registrarse con" />
       <View style={styles.touchabletext}>
         <TouchableOpacity>
