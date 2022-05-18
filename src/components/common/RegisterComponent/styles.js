@@ -21,21 +21,6 @@ const stylesDrawer = StyleSheet.create({
     marginBottom: 3,
   },
   inputcontainer: {borderRadius: 10, backgroundColor: '#fff'},
-  containerbuttons: {
-    flex: 1,
-    flexDirection: 'row',
-    width: Dimensions.get('screen').width,
-    alignContent: 'center',
-    alignSelf: 'center',
-    alignItems: 'center',
-  },
-  containerdimension: {width: Dimensions.get('screen').width, height: 50},
-  containerButton: {width: '34%', marginHorizontal: 5},
-  buttonstyle1: {
-    backgroundColor: '#268EF7',
-    alignContent: 'center',
-  },
-  buttonstyle2: {backgroundColor: '#3b5998'},
   touchabletext: {
     width: Dimensions.get('screen').width,
     marginTop: 20,

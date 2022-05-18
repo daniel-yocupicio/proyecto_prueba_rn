@@ -26,7 +26,7 @@ const Icons = () => {
 
 export default function GoogleFacebookButtons({title}) {
   return (
-    <Card containerStyle={styles.stylesGoogleFacebookButtons.card}>
+    <Card containerStyle={styles.stylesGoogleFacebookButtons.cardButtons}>
       <Card.Title style={styles.stylesGoogleFacebookButtons.cardtitle2}>
         {title}
       </Card.Title>
