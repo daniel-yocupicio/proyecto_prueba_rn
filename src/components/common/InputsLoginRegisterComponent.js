@@ -1,6 +1,6 @@
 import React from 'react';
 import {Input, Button, Card} from 'react-native-elements';
-import styles from '../styles';
+import styles from '../globalstyles';
 
 export default function InputsLoginRegisterComponent({type}) {
   return (
