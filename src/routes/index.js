@@ -52,54 +52,9 @@ export default function Routes() {
           name={item.name}
           component={DrawerStack}
           options={{headerShown: false}}
+          initialParams={{view: item.title, component: item.component}}
         />
       ))}
     </Stack.Navigator>
   );
 }
-
-/*
-        <DrawerStack
-          component={item.component}
-          name={item.name}
-          title={item.title}
-        />;
-*/
-
-/*import DrawerProfile from './DrawerProfile';
-import DrawerLogin from './DrawerLogin';
-import DrawerRegister from './DrawerRegister';
-import DrawerSettings from './DrawerSetting';*/
-
-/*const HasDrawerProfile = boolvalue => {
-  if (boolvalue) {
-    return (
-      <Stack.Screen
-        name="DrawerProfile"
-        component={DrawerProfile}
-        options={{headerShown: false}}
-      />
-    );
-  } else {
-    return null;
-  }
-};*/
-
-/*
-      {HasDrawerProfile(isLoged)}
-      <Stack.Screen
-        name="DrawerLogin"
-        component={DrawerLogin}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="DrawerRegister"
-        component={DrawerRegister}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="DrawerSettings"
-        component={DrawerSettings}
-        options={{headerShown: false}}
-      />
-*/
