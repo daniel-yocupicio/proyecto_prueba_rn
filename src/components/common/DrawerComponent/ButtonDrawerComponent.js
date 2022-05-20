@@ -14,7 +14,11 @@ export default function ButtonDrawerComponent({
   return (
     <TouchableOpacity
       key={nameicon}
-      onPress={() => functionsDrawer.gotoScreen(navigation, route)}
+      onPress={() => {
+        route === 'none'
+          ? functionsDrawer.logout()
+          : functionsDrawer.gotoScreen(navigation, route);
+      }}
       style={stylesDrawer.touchable}>
       <View style={stylesDrawer.containericontext}>
         <Icon name={nameicon} type="material-community" color={coloricon} />
@@ -23,3 +27,5 @@ export default function ButtonDrawerComponent({
     </TouchableOpacity>
   );
 }
+
+// functionsDrawer.gotoScreen(navigation, route)

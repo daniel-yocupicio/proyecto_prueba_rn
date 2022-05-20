@@ -3,7 +3,7 @@ const drawerConst = {
     iconsdraweraccount: ['account-cog', 'logout'],
     textbuttonsdraweraccount: ['Editar cuenta', 'Cerrar sesión'],
     colorsicon: ['#517fa4', '#BF4343'],
-    routes: ['DrawerSettings', 'DrawerSettings'],
+    routes: ['DrawerSettings', 'none'],
   },
   isnotloged: {
     iconsdraweraccount: ['login', 'account-plus'],

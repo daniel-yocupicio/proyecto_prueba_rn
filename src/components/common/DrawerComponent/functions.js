@@ -2,6 +2,7 @@ import React from 'react';
 import {Image} from 'react-native';
 import stylesDrawer from './styles';
 import values from './const';
+import auth from '@react-native-firebase/auth';
 
 const fuctionsDrawer = {
   imageUser: boolvalue => {
@@ -47,6 +48,11 @@ const fuctionsDrawer = {
     if (boolvalue) {
       navigation.navigate('DrawerProfile');
     }
+  },
+  logout: () => {
+    auth()
+      .signOut()
+      .then(() => console.log('User signed out!'));
   },
 };
 
