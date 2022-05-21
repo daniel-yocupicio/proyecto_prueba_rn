@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {View, Text, Dimensions} from 'react-native';
 import {Input, Button, Card, Overlay} from 'react-native-elements';
 import styles from '../globalstyles';
-import auth from '@react-native-firebase/auth';
 import InputLoginRegisterFunctions from '../functions/InputsLoginRegisterfunctions';
 
 function InputsForm({onChange, type}) {
@@ -68,50 +67,3 @@ export default function InputsLoginRegisterComponent({type}) {
     </Card>
   );
 }
-
-/*function defaultValue() {
-  return {
-    email: '',
-    password: '',
-    repeatPassword: '',
-  };
-}*/
-
-/*const validateData = (datos, warningFunction, warningData) => {
-  if (datos.password === '' || datos.password.length < 6) {
-    warningFunction(true);
-  } else {
-    if (
-      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i.test(
-        datos.email,
-      )
-    ) {
-      if (datos.password === datos.repeatPassword) {
-        warningFunction(false);
-        createAccount(datos.email, datos.password);
-      } else {
-        warningFunction(true);
-      }
-    } else {
-      warningFunction(true);
-    }
-  }
-};
-
-function createAccount(email, password) {
-  auth()
-    .createUserWithEmailAndPassword(email, password)
-    .then(() => {
-      console.log('User account created & signed in!');
-    })
-    .catch(error => {
-      if (error.code === 'auth/email-already-in-use') {
-        console.log('That email address is already in use!');
-      }
-      if (error.code === 'auth/invalid-email') {
-        console.log('That email address is invalid!');
-      }
-      console.error(error);
-    });
-}
-*/

@@ -5,13 +5,6 @@ import stylesDrawer from './styles.js';
 import IsLogedContext from '../../../context/IsLogedContext.js';
 import ButtonDrawerComponent from './ButtonDrawerComponent';
 import DrawerScroll from './DrawerScroll';
-import auth from '@react-native-firebase/auth';
-
-function logout() {
-  auth()
-    .signOut()
-    .then(() => console.log('User signed out!'));
-}
 
 export default function DrawerComponent(props) {
   const {isLoged} = React.useContext(IsLogedContext);

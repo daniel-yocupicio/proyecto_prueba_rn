@@ -1,3 +1,4 @@
+// Poner el nombre que tiene que ir y la imagen del usuario seleccionada.
 import React from 'react';
 import {Text, TouchableOpacity, ImageBackground} from 'react-native';
 import fuctionsDrawer from './functions';

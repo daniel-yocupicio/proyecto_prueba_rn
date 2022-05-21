@@ -1,4 +1,3 @@
-// Se importa auth
 import auth from '@react-native-firebase/auth';
 
 const defaultValue = () => {

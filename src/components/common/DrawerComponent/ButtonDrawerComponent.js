@@ -27,5 +27,3 @@ export default function ButtonDrawerComponent({
     </TouchableOpacity>
   );
 }
-
-// functionsDrawer.gotoScreen(navigation, route)
