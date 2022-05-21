@@ -3,6 +3,7 @@ import {View, Text, Dimensions} from 'react-native';
 import {Input, Button, Card, Overlay} from 'react-native-elements';
 import styles from '../globalstyles';
 import auth from '@react-native-firebase/auth';
+import InputLoginRegisterFunctions from '../functions/InputsLoginRegisterfunctions';
 
 function InputsForm({onChange, type}) {
   return (
@@ -45,8 +46,8 @@ function Error({isvisible, warningChange}) {
 }
 
 export default function InputsLoginRegisterComponent({type}) {
-  const [data, setData] = useState(defaultValue());
-  const [warningData, setwarningData] = useState(true);
+  const [data, setData] = useState(InputLoginRegisterFunctions.defaultValue());
+  const [warningData, setwarningData] = useState(false);
 
   const onChange = (e, key) => setData({...data, [key]: e.nativeEvent.text});
   const warningChange = value => setwarningData(value);
@@ -59,22 +60,24 @@ export default function InputsLoginRegisterComponent({type}) {
       <InputsForm onChange={onChange} type={type} />
       <Button
         title={type}
-        onPress={(d, s, w) => validateData(data, setwarningData, warningData)}
+        onPress={(d, s, w) =>
+          InputLoginRegisterFunctions.validateData(type, data, warningChange)
+        }
       />
       <Error isvisible={warningData} warningChange={warningChange} />
     </Card>
   );
 }
 
-function defaultValue() {
+/*function defaultValue() {
   return {
     email: '',
     password: '',
     repeatPassword: '',
   };
-}
+}*/
 
-const validateData = (datos, warningFunction, warningData) => {
+/*const validateData = (datos, warningFunction, warningData) => {
   if (datos.password === '' || datos.password.length < 6) {
     warningFunction(true);
   } else {
@@ -111,3 +114,4 @@ function createAccount(email, password) {
       console.error(error);
     });
 }
+*/
